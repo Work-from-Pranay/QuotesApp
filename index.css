@@ -1,0 +1,113 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url("Balony\ Script.ttf");
+   
+  }
+
+body {
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: beige;
+  
+}
+#main{
+    height: 50vh;
+    width: 60vw;
+    
+    font-family: myFirstFont;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vh;
+    margin-top: 25vh;
+}
+#quotes{
+    font-size: 4vw;
+    text-align: center;
+}
+
+#author{
+    color: rgb(190, 190, 159);
+    font-size: 2vw;
+    margin-left: 33vw;
+}
+         
+#newQ{
+    background-image: linear-gradient(to right, #000428 0%, #004e92  51%, #000428  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: beige;            
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 30px;
+    display: block;
+    text-decoration: none;
+    border: none;
+  }
+
+  #newQ:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+  #tweetMe{
+    border: none;
+    background-color: transparent;
+    
+}
+#xtweet{
+    object-fit: contain;
+    height: 5vh;
+    width: 9vw;
+    
+  }
+
+  @media screen and (max-width:460px) {
+    #quotes{
+        font-size: 10vw;
+        text-align: center;
+    }
+    
+    #author{
+        color: rgb(190, 190, 159);
+        font-size: 6vw;
+        margin-left: 33vw;
+
+    }
+    #main{
+        width: 70vw;
+    }
+    #newQ{
+        
+        margin-top: 70px;
+        padding: 10px 25px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background: #5f5d5d;
+  
+        /* box-shadow: 0 0 20px #eee; */
+        border-radius: 30px;
+        display: block;
+        text-decoration: none;
+        border: none;
+        font-size: 4vw;
+      }
+    
+      #newQ:hover {
+        background-position: right center;
+      
+        text-decoration: none;
+      }
+  }
+ 
